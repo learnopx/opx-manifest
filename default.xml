@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest>
+  <remote name="opx" fetch="https://github.com/open-switch" revision="master"/>   
+  <default remote="opx" sync-j="4"/>
+
+  <!-- The following section is for platform-specific configuration files-->
+  <project name="opx-platform-config"/>
+  
+  <!-- The following section is for infrastructure and libraries-->
+  <project name="opx-common-utils"/>
+  <project name="opx-cps"/>
+  <project name="opx-db-sql"/>
+  <project name="opx-logging"/>
+
+  <!-- The following section is for API model definitions -->
+  <project name="opx-base-model"/>
+
+  <!-- The following section is for all networking related functions including ACLs, QoS, etc.. -->
+  <project name="opx-nas-acl"/>
+  <project name="opx-nas-common"/>
+  <project name="opx-nas-daemon"/>
+  <project name="opx-nas-interface"/>
+  <project name="opx-nas-l2"/>
+  <project name="opx-nas-l3"/>
+  <project name="opx-nas-ndi"/>
+  <project name="opx-nas-ndi-api"/>
+  <project name="opx-nas-qos"/>
+
+  <!-- The following section is for the linux adaption layer - essentially the hooks allowing linux to work with the rest of the system -->
+  <project name="opx-nas-linux"/>
+
+  <!-- SAI -->
+  <project path="opx-sai-api" name="SAI" revision="dell.0.94+" />  
+  <project name="opx-sai-common"/>
+  <project name="opx-sai-common-utils"/>
+  <project name="opx-sai-vm"/>
+
+  <!-- The following section is for platform service configuration -->
+  <project name="opx-pas"/>
+
+  <!-- SDI -->
+  <project name="opx-sdi-api"/>
+  <project name="opx-sdi-device-drivers"/>
+  <project name="opx-sdi-sys"/>
+  <project name="opx-sdi-sys-vm"/>
+  <project name="opx-sdi-framework"/>
+
+  <!-- SDI implementation for Mellanox platforms -->
+  <project name="opx-mlnx-sdi-sys"/>
+
+  <!-- The following section is for the remaining miscellaneous packages -->
+  <project name="opx-tmpctl"/>
+  
+  <!-- The following section is for build tools and scripts -->
+  <project name="opx-build"/>
+</manifest>
